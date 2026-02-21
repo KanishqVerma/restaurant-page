@@ -21,6 +21,9 @@
 body{
     min-height: 100vh;
     background-color: #e5f1fa;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -32,6 +35,11 @@ header{
 
 header h1{
     width: 100%;
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("./assets/blue-rippled-water-background.jpg") center / cover no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 nav{
@@ -71,20 +79,17 @@ h1{
     font-family: "AgencyFB", sans-serif;
 
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 #content h2{
     font-size: 5rem;
     text-align: center;
-}
-
-#content > p{
-    text-decoration: underline;
 }
 
 .luxury{
@@ -113,6 +118,9 @@ h1{
     background-color: #161E54;
     color: white;
     height: 2rem;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
 
     display: flex;
     justify-content: center;
@@ -135,4 +143,63 @@ a:hover{
 
 svg{
     margin: 4px;
+}
+
+.home-content{
+    font-size: 1.3rem;
+    padding: 0.6rem 5rem;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us h2{
+    padding-bottom: 2rem;
+    font-family: "Luxurious", sans-serif;
+}
+
+.contact-us > p{
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.address h3{
+    font-size: 2rem;
+}
+
+.general-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.general-information h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.general-information p{
+    padding-bottom: 0.8rem;
+    font-size: 1rem;
 }
